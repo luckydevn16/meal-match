@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Match</title>
+    <link rel="shortcut icon" href="assets/img/donut.png">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div class="main-wrapper">
+        <div class="container">
+            <h1 class="main-heading">
+                MEAL MATCH
+            </h1>
+            <p class="section-text">
+                Every item hides a meal. Each meal has a pair. Find a pair to an every meal and you get 1 point. 
+                Memorize the place of each meal so that you can find it when you need it.
+            </p>
+            <h3 class="score-heading">
+                Score: 
+                <span class="score" id="result">0</span> 
+                <span class="text-small">of</span> 
+                <span id="items-qty"></span>
+            </h3>
+            <div id="grid" class="cards-grid">
+            </div>
+            <button class="btn new-set">New Set!</button>
+            <p class="author">
+                Made by <a href="https://redhatdev16.github.io/portfolio/" target="_blank" class="author-link">redhatdev16</a> 
+            </p>
+        </div>
+        <div class="message-popup">
+            <h3 class="message-text">Message</h3>
+        </div>
+        <div class="winner-modal" onclick="closeModal(winnerModal)">
+            <div class="winner-modal-content">
+                <h3 class="winner-modal-heading">
+                    🤩🤩🤩 <br> 
+                    Congratulations! You have Won! <br> 
+                    🤩🤩🤩
+                </h3>
+                <p class="winner-modal-text">
+                    You did it in <span id="stepsCount"></span> steps
+                </p>
+                <div class="modal-btns">
+                    <button class="btn new-set">Play Again!</button>
+                    <button class="btn close-modal" onclick="closeModal(winnerModal)">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/script.js"></script>
+</body>
+</html>
