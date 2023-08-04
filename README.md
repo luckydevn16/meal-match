@@ -9,4 +9,4 @@ The player must find a match for each item until he/she finds all of them.
 
 This game is suitable for children and adults, it trains memory and attention.
 
-[Here's the demo](https://redhatdev16.github.io/meal-match/)
+[Here's the demo](https://luckydevn16.github.io/meal-match/)
